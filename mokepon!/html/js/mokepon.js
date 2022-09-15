@@ -47,11 +47,10 @@ function seleccionarMascotaJugador() {
     } else {
         alert('Selecciona una mascota')
     }
-
     seleccionarMascotaEnemigo()
     
 }
-
+  
 function seleccionarMascotaEnemigo() {
     let mascotaAleatoria = aleatorio(1, 3)
     let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
