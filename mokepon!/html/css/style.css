@@ -1,0 +1,13 @@
+.titulo {
+    color:aliceblue ;
+    width: 310px;
+    height: 50px;
+    background-color: teal;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
