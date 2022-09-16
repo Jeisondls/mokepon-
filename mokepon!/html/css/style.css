@@ -5,7 +5,8 @@ body{
     background-image: url(https://images3.alphacoders.com/844/84405.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-position: 100%;
+    
 }
 
 
@@ -32,8 +33,8 @@ body{
 
 
 .tarjeta-de-mokepon{
-    width: 200px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     background: transparent;
     padding: 10px;
     box-sizing: border-box;
@@ -43,7 +44,9 @@ body{
     color: white;
     display: flex;  
     letter-spacing: 2px;
-
+    justify-content: top;
+    align-items:center;
+    flex-direction: column;
 }
 
 .tarjeta-de-mokepon:hover{
@@ -56,7 +59,10 @@ body{
 }
 
 .tarjeta-de-mokepon img{
-    width: 80px;
+    width: 100px;
+}
+.tarjeta-de-mokepon .Hipo{
+    width: 75px;
 }
 
 #boton-mascota{
@@ -86,7 +92,157 @@ input{
     display: none;
 }
 
-.tarjetas{
+input:checked + label{
+    color: #ffffff;
+    background: #feda39cc;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0, 3s;
+    border: 1px solid#114c7c;
+    font-size: 15px;
+    
+}
+
+.tarjetas, .tarjetas-ataques{
     display: flex;
     gap: 10px;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub2{
+    color: white;
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+
+.boton-de-fuego{
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(255, 175, 3);
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    
+}
+
+.boton-de-agua {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(30, 146, 255);
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    
+}
+
+.boton-de-tierra {
+    width: 150px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgb(146, 89, 25);
+    border-radius: 20px;
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    
+}
+
+.boton-de-fuego:hover{
+    color: #ff5404;
+    background: #f8e915;
+    box-shadow: 0 0 10px #fbff0a, 0 0 40px #f6fa15, 0 0 80px #f0f321;
+    transition-delay: 0, 2s;
+    border: 1px solid#ff5404;
+    font-size: 18px;
+}
+
+.boton-de-agua:hover {
+    color: #ffffff;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0, 2s;
+    border: 1px solid#114c7c;
+    font-size: 18px;
+}
+
+.boton-de-tierra:hover {
+    color: #f0c711;
+    background: #833b00;
+    box-shadow: 0 0 10px #c96100, 0 0 40px #c96100, 0 0 80px #c96100;
+    transition-delay: 0, 2s;
+    border: 1px solid#f08101;
+    font-size: 18px;
+}
+
+#mensajes{
+    width: 280px;
+    background: none;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    letter-spacing: 1px;
+    border: 2px solid#ffffff;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+#boton-reiniciar{
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 4px;
+}
+
+#boton-reiniciar:hover{
+    color: #ffffff;
+    background: #2196f3;
+    box-shadow: 0 0 15px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    transition-delay: 0, 3s;
+    
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 20px;
+    
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 600px ) {
+    
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
 }
