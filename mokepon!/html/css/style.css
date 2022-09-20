@@ -119,27 +119,28 @@ input:checked + label{
 }
 
 .boton-de-fuego{
-    width: 150px;
+    width: 50px;
     height: 50px;
     background-color: transparent;
     color: white;
     border: 2px solid rgb(255, 175, 3);
-    border-radius: 20px;
-    font-size: 15px;
+    border-radius: 50%;
+    font-size: 150%;
     font-family: 'Righteous', cursive;
     letter-spacing: 2px;
     margin-top: 50px;
     
+    
 }
 
 .boton-de-agua {
-    width: 150px;
+    width: 50px;
     height: 50px;
     background-color: transparent;
     color: white;
     border: 2px solid rgb(30, 146, 255);
-    border-radius: 20px;
-    font-size: 15px;
+    border-radius: 50%;
+    font-size: 150%;
     font-family: 'Righteous', cursive;
     letter-spacing: 2px;
     margin-top: 50px;
@@ -147,13 +148,13 @@ input:checked + label{
 }
 
 .boton-de-tierra {
-    width: 150px;
+    width: 50px;
     height: 50px;
     background-color: transparent;
     color: white;
     border: 2px solid rgb(146, 89, 25);
-    border-radius: 20px;
-    font-size: 15px;
+    border-radius: 50%;
+    font-size: 150%;
     font-family: 'Righteous', cursive;
     letter-spacing: 2px;
     margin-top: 50px;
